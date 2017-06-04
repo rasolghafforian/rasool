@@ -196,7 +196,7 @@ function load_config( )
   for v,user in pairs(config.sudo_users) do
     print("Allowed user: " .. user)
   end
-  return config
+  return config 
 end
 
 -- Create a basic config.json file and saves it.
@@ -218,8 +218,7 @@ function create_config( )
     "broadcast",
     "download_media",
     "invite"
-    },
-    sudo_users = {110626080,103649648,0,tonumber(our_id)},--Sudo users
+    },,365803185,tonumber(our_id)},--Sudo users
     disabled_channels = {365803185},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
